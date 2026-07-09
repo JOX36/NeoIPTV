@@ -1,7 +1,11 @@
 package com.iptvplayer.data
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "channel")
 data class Channel(
-    val id: String,
+    @PrimaryKey val id: String,
     val name: String,
     val url: String,
     val logo: String? = null,
