@@ -3,6 +3,7 @@ package com.iptvplayer.ui.screens
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 
@@ -14,6 +15,5 @@ fun SearchScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text("🔍 Búsqueda Futurista", style = MaterialTheme.typography.titleLarge)
-        // Implement search logic here
     }
 }
