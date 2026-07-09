@@ -38,6 +38,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "17"
+        freeCompilerArgs += listOf(
+            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api"
+        )
     }
     buildFeatures {
         compose = true
@@ -59,6 +62,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("com.google.android.material:material:1.12.0")
+    implementation("com.google.code.gson:gson:2.11.0")
     implementation("androidx.navigation:navigation-compose:2.8.3")
 
     // ExoPlayer for video

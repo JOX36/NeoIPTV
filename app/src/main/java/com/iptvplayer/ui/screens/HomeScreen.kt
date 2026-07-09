@@ -15,6 +15,7 @@ import androidx.navigation.NavController
 import com.iptvplayer.data.Channel
 import com.iptvplayer.data.M3UParser
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(navController: NavController) {
     val channels = remember { mutableStateListOf<Channel>() }
